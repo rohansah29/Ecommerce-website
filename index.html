@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="icon.ico">
+    <title>Online Sneakers Store-MySneakersCartcom</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="https://rohansah07.github.io/Ecommerce-website/" class="logo">MySneakersCartcom</a>
+            <div id="cart-float">
+            <i class='bx bxs-shopping-bag' id="cart-icon"></i>
+            <div id="counter"></div>
+            </div>
+           
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+
+                </div>
+                <div class="total">
+                    <div class="total-tittle">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                <a href="https://rohansah07.github.io/Payment-Method/"> <button type="button" class="btn-buy" onclick="clickFun()">Buy Now</button></a>
+                <i  class='bx bx-x' id="close-cart"></i>
+            </div>  
+        </div>
+    </header>
+
+    <section class="shop container">
+        <h1 class="section-title">Shop Products</h1>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="jordan.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike AirForce 1 White Pure</h2>
+                <span class="price">₹2500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Jordan Retro Smoke Grey</h2>
+                <span class="price">₹3500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker3.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Jordan Retro "University Blue"</h2>
+                <span class="price">₹5000</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker4.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Jordan 1 Low "Wolf Grey"</h2>
+                <span class="price">₹3500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker5.jpg" alt="" class="product-img">
+                <h2 class="product-title">Jordan Retro 4 Off White Cream Sail</h2>
+                <span class="price">₹4500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nike Air Jordan Retro 4 "kaws"</h2>
+                <span class="price">₹4500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Dior X Air Jordan 1 Chicago</h2>
+                <span class="price">₹5500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="sneaker8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Jordan Retro 1 Travic Scott Brown</h2>
+                <span class="price">₹4500</span>
+                <div>
+                    <label>SIZE: </label>
+                    <select>
+                        <option>5 UK</option>
+                        <option>6 UK</option>
+                        <option>7 UK</option>
+                        <option>8 UK</option>
+                        <option>9 UK</option>
+                        <option>10 UK</option>
+                    </select>
+                </div>
+                <i onclick="addToCart(this.parentElement)" class='bx bxs-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+     <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="FList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="FList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refunds</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="FList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air JOrdan</li>
+                    <li class="fListItem">Dior</li>
+                    <li class="fListItem">Jordan Retro</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/imsah.rohan"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/KrRohan07"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/iamsah.rohan"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kumar-rohan-915538214"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright">Developed by Kumar Rohan</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>
